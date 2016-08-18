@@ -1,0 +1,53 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', '-g', 'gulp' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose node symlink /usr/bin/node
+5 verbose install initial load of /usr/lib/package.json
+6 verbose readDependencies loading dependencies from /usr/lib/package.json
+7 silly cache add args [ 'gulp', null ]
+8 verbose cache add spec gulp
+9 silly cache add parsed spec { raw: 'gulp',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'gulp',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 silly addNamed gulp@*
+11 verbose addNamed "*" is a valid semver range for gulp
+12 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+13 silly mapToRegistry name gulp
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry http://172.23.238.253:4873/
+16 silly mapToRegistry uri http://172.23.238.253:4873/gulp
+17 verbose addNameRange registry:http://172.23.238.253:4873/gulp not in flight; fetching
+18 verbose request uri http://172.23.238.253:4873/gulp
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 05:56:04
+21 verbose request id 5a65fff4c2e173cb
+22 http request GET http://172.23.238.253:4873/gulp
+23 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+24 info attempt registry request try #2 at 05:58:21
+25 http request GET http://172.23.238.253:4873/gulp
+26 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+27 info attempt registry request try #3 at 06:01:28
+28 http request GET http://172.23.238.253:4873/gulp
+29 verbose stack Error: connect ETIMEDOUT
+29 verbose stack     at exports._errnoException (util.js:746:11)
+29 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1010:19)
+30 verbose cwd /vagrant/ReactJS/client
+31 error Linux 3.13.0-65-generic
+32 error argv "/usr/bin/node" "/usr/bin/npm" "i" "-g" "gulp"
+33 error node v0.12.7
+34 error npm  v2.11.3
+35 error code ETIMEDOUT
+36 error errno ETIMEDOUT
+37 error syscall connect
+38 error network connect ETIMEDOUT
+38 error network This is most likely not a problem with npm itself
+38 error network and is related to network connectivity.
+38 error network In most cases you are behind a proxy or have bad network settings.
+38 error network
+38 error network If you are behind a proxy, please make sure that the
+38 error network 'proxy' config is set properly.  See: 'npm help config'
+39 verbose exit [ 1, true ]
